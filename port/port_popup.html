@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<script>
+			//익스로 열면 엣지로 전환
+			if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+				// IE!!
+				window.location = "microsoft-edge:" + window.location.href;
+				setTimeout(function() {
+				window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+				}, 10);
+			}
+		</script>
+		<meta charset="UTF-8">
+		<!-- minimum-scale=1 : 최소 크기 설정 (기본값 : 0.25, 범위 : 0~10.0), maximum-scale=1 : 최대 크기 설정(최대 배율 범위 : 0~10.0), user-scalable=no : 사용자 단말의 확대기능 사용 유무 선언(yes/no) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<title>HYEIN PORTFOLIO</title>
+		<link rel="icon" href="../assets/images/coleo_favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+		<script type="text/javascript" src="../assets/js/jquery-1.12.4.min.js"></script>
+        <script src="../assets/js/swiper.min.js"></script>
+        <script src="./assets/js/gsap.min.js"></script>
+        <script src="../assets/js/ScrollToPlugin.min.js"></script>
+        <script src="../assets/js/ScrollTrigger.min.js"></script>
+        <script src="../assets/js/jquery.smoothwheel.js"></script>
+        <script src="../assets/js/smooth-scrollbar.js"></script>
+        <script src="../assets/js/script.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-206JVQZBCT"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-206JVQZBCT');
+		</script>
+	</head>
+	<body>
+		<div id="cursor">
+			<div class="cursor__circle"></div>
+		</div>
+
+		<div id="wrapper" class="main">
+			<div id="wrap" class="main">
+				<div class="container">
+					<ul class="portList">
+						<li><img src="../assets/images/port_popup.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

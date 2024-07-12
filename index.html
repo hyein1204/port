@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<script>
+			//익스로 열면 엣지로 전환
+			if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+				// IE!!
+				window.location = "microsoft-edge:" + window.location.href;
+				setTimeout(function() {
+				window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+				}, 10);
+			}
+		</script>
+		<meta charset="UTF-8">
+		<!-- minimum-scale=1 : 최소 크기 설정 (기본값 : 0.25, 범위 : 0~10.0), maximum-scale=1 : 최대 크기 설정(최대 배율 범위 : 0~10.0), user-scalable=no : 사용자 단말의 확대기능 사용 유무 선언(yes/no) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<title>HYEIN PORTFOLIO</title>
+		<link rel="icon" href="./assets/images/coleo_favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
+
+		<script type="text/javascript" src="./assets/js/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/swiper.min.js"></script>
+        <script src="./assets/js/gsap.min.js"></script>
+        <script src="./assets/js/ScrollToPlugin.min.js"></script>
+        <script src="./assets/js/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/jquery.smoothwheel.js"></script>
+        <script src="./assets/js/smooth-scrollbar.js"></script>
+        <script src="./assets/js/script.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-206JVQZBCT"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-206JVQZBCT');
+		</script>
+	</head>
+	<body>
+		<div id="cursor">
+			<div class="cursor__circle"></div>
+		</div>
+		<!-- <div id="loading">
+			<div class="loading">
+				<p class="fm_NeueHaas55">
+					
+				</p>
+				<div class="count">
+					<span id="counter" class="number fm_NeueHaas55">0</span>
+					<span class="fm_NeueHaas55">-</span>
+					<span class="fm_NeueHaas55">100</span>
+				</div>
+			</div>
+		</div> -->
+		<div id="wrapper" class="main">
+			<div id="header">
+				<div class="header_wrap">
+					<a href="#home" cursor-class="arrow" class="logo fm_NeueHaas55">HYEIN PORTFOLIO</a>
+					<a href="javascript:void(0);" cursor-class="arrow" class="menu_btn">
+						<span class="line_1"></span>
+						<span class="line_2"></span>
+					</a>
+					<ul class="h_view">
+						<li class="home"><a href="#home" cursor-class="arrow" class="fm_NeueHaas55">HOME</a></li>
+						<li class="about"><a href="#about" cursor-class="arrow" class="fm_NeueHaas55">SKILL</a></li>
+						<li class="work"><a href="#works" cursor-class="arrow" class="fm_NeueHaas55">WORK</a></li>
+						<li class="contact"><a href="#contact" cursor-class="arrow" class="fm_NeueHaas55">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- <div id="home"></div> -->
+			<div id="wrap" class="main">
+				<div class="container">
+					<div id="home" class="sec01 section">
+						<div class="cont_wrap">
+							<div class="title">
+								<h1 class="fm_NeueHaas55"><img src="./assets/images/bigtit_1.png" alt="HYEIN" class="title_1"></h1>
+								<h1 class="hidden fm_NeueHaas55"><img src="./assets/images/bigtit_2.png" alt="PORTFOLIO" class="title_2"></h1>
+							</div>
+
+							<div class="big_logo"><img src="./assets/images/sec01_logo.png" alt=""></div>
+
+							<div class="caption">
+								<p class="fm_NeueHaas55">
+									WEB DESIGN<br>
+									WEB PUBLISHER
+								</p>
+							</div>
+
+							<div class="scroll">
+								<p class="text fm_NeueHaas55">SCROLL</p>
+								<span class="line_bg"></span>
+								<span class="line_active"></span>
+							</div>
+						</div>
+					</div>
+					<div id="sec02" class="sec02 section">
+						<div class="cont_wrap">
+							<!-- <div class="video_wrap">
+								<video preload="auto" autoplay loop muted>
+									<source src="./assets/images/video/sec04_cont_bg_1.jpg" type="video/mp4">
+								</video>
+							</div>  -->
+							<!-- <div class="text">
+								<h1 class="one">
+									<p class="fm_NeueHaas55"><span class="fm_SilkSerifItalic">안녕하세요<br /></span> 공감할 수 있는 디자인을 만드는</p>
+									<p class="fm_NeueHaas55"> 웹디자이너 이혜인입니다.</p>
+								</h1>
+								
+							</div>  -->
+							<!-- <div class="sub_text">
+								<p class="fm_NeueHaas55">Explore COLEO MARKETING GROUP</p>
+							</div> -->
+						</div>
+					</div>
+					<div id="sec03" class="sec03 section">
+						<div class="cont_wrap">
+							<!-- <div class="text">
+								<h1 class="text_1 fm_NeueHaas55">안녕하세요</h1>
+								<h1 class="text_2 fm_NeueHaas55">공감할 수 있는 디자인을 만드는</h1>
+								<h1 class="text_3 fm_NeueHaas55">웹디자이너 이혜인입니다.</h1>
+							</div> -->
+							<div class="works_noti">
+								<!-- <span class="symbol"><img src="./assets/images/symbol.svg" alt="symbol"></span> -->
+								<p class="fw_700">
+									안녕하세요.<br>
+									새로운 시각으로 브랜드가 가진 가치를 발견하고<br>
+									나아갈 방향성을 제시하는 웹디자이너 이혜인입니다.
+								</p>
+								<!-- <a href="#works" cursor-class="arrow" class="worksBtn b fm_NeueHaas55">WORKS <span class="ico_more_b"></span></a> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- <div id="about"></div> -->
+					<div id="about" class="sec04 section">
+						<!-- <div class="topText">
+							<ul>
+								<li class="fm_NeueHaas55">BEYOND CREATION</li>
+								<li class="fm_NeueHaas55">ONE VISION</li>
+								<li class="fm_NeueHaas55">UNITED WE ARE</li>
+							</ul>
+						</div> -->
+						<div class="img_wrap">
+							<div class="bg bg_1"></div>
+						</div>
+						<div class="cont_wrap">
+							<div class="text_wrap">
+								<div class="contBox contBox_1">
+									<div class="text">
+										<div class="titleBox">
+											<h1 class="title fm_NeueHaas55">#디자인 #퍼블리싱<br><span class="fm_SilkSerifItalic">기본기를 다졌습니다.</span></h1>
+										</div>
+										<div class="subBox">
+											<p class="ko fw_500">
+												책임감을 가지고 맡은 일은 끝까지 해내려고 노력합니다.<br>
+												주춤하지만 무너지지않는 끈기를 가지고 있습니다.<br>
+												꾸준히 성장하기 위해 자기계발을 멈추지 않고 공부중입니다.<br>
+												마음먹은 것이 있다면 바로 움직이는 행동파입니다 :)
+											</p>
+										</div>
+										<div class="iconBox">
+											<ul>
+												<li class="fm_NeueHaas55">
+													<h5>Photoshop + Illustrator</h5>
+													<span>사진 보정 및 편집이 가능하고 배너, 상세페이지, 썸네일 등의 디자인 작업을 할 수 있습니다. 로고 및 아이콘, 포스터 제작이 가능합니다</span>
+												</li>
+												<li class="fm_NeueHaas55">
+													<h5>XD + Zeplin</h5>
+													<span>컴포넌트 및 프로토타입 기능을 활용하여 웹/모바일 시안 제작이 가능합니다.
+														XD로 작업한 파일을 제플린으로 export하여 개발자 분들과 협업 작업이 가능합니다.</span>
+												</li>
+												<li class="fm_NeueHaas55">
+													<h5>Figma</h5>
+													<span>
+														</span>
+												</li>
+												<li class="fm_NeueHaas55">
+													<h5>HTML + CSS</h5>
+													<span>콘텐츠 내용에 알맞은  태그를 사용하여 코드를 작성합니다.
+
+														웹 표준 및 웹 접근성을 준수하여 반응형 레이아웃을 제작할 수 있습니다.</span>
+												</li>
+												<li class="fm_NeueHaas55">
+													<h5>Co-work</h5>
+													<span>원활한 협업을 위해 다양한 분야의 지식을 배우고 적용하며 공유합니다.
+
+														기획자,퍼블리셔,개발자와 가깝게 일하며, 함께 좋은 결과물을 만들고자 노력합니다.</span>
+												</li>
+												<li class="fm_NeueHaas55">
+													<h5>javascript + jQuery</h5>
+													<span>
+
+														</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="contBox contBox_2">
+									<div class="bg bg_2"></div>
+									<div class="text">
+										<div class="subBox">
+											<p class="en fm_NeueHaas55">
+												
+												 
+											</p>
+											<p class="ko fw_500">
+												
+											</p>
+										</div>
+										<div class="iconBox">
+											<img src="./assets/images/ico_oneteam.png" alt="One Team">
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div id="sec05" class="sec05 section">
+						<div class="cont_wrap">
+							<div class="title">
+								<!-- <p class="fm_NeueHaas55"></p>
+								<h1 class="fm_NeueHaas55"></h1> -->
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide slide_1">
+										<!-- <img src="./assets/images/slide_img_1.jpg" alt="slide_1"> -->
+									</div>
+									<div class="swiper-slide slide_2">
+										<!-- <img src="./assets/images/slide_img_2.jpg" alt="slide_2"> -->
+									</div>
+									<div class="swiper-slide slide_3">
+										<!-- <img src="./assets/images/slide_img_3.jpg" alt="slide_3"> -->
+									</div>
+									<div class="swiper-slide slide_4">
+										<!-- <img src="./assets/images/slide_img_4.jpg" alt="slide_4"> -->
+									</div>
+									<div class="swiper-slide slide_5">
+										<!-- <img src="./assets/images/slide_img_5.jpg" alt="slide_5"> -->
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div id="work"></div> -->
+					<div id="works" class="sec06 section">
+						<div class="cont_wrap">
+							<div class="title">
+								<h1 class="main fm_NeueHaas55">My</h1>
+								<h1 class="sub fm_SilkSerifItalic">Works</h1>
+							</div>
+						</div>
+						<div class="works_wrap">
+							<a href="#" target="_blank" cursor-class="arrow" class="works work_1">
+								<img src="./assets/images/work_1.png" alt="work">
+								<strong>프로젝트 소개</strong>
+								<p>서소문성지역사박물관 홈페이지<br>
+									인트로와 일반 페이지로 통해 서소문이 가지고 있는 분위기를 보여줄 수 있게 디자인을 하였고,<br>
+									박물관 전시 및 소장품 정보 제공을 중심적으로 이미지를 사용하여 직관적으로 보여줄수 있게 표현하였습니다.
+								</p>
+								<strong>기여도</strong>
+								<p>디자인 100% / HTML&CSS 20%</p>
+								<strong>사용프로그램</strong>
+								<p>Photoshop, Illustrator</p>
+								<button onclick="location.href='https://www.behance.net/gallery/162166391/_'">BEHANCE ↗</button>
+							</a>
+							<a href="#" target="_blank" cursor-class="arrow" class="works work_2">
+								<img src="./assets/images/work_2.png" alt="work">
+								<strong>프로젝트 소개</strong>
+								<p>인천광역시교육청학생문화회관 홈페이지<br>
+									인트로와 일반 페이지로 통해 서소문이 가지고 있는 분위기를 보여줄 수 있게 디자인을 하였고,<br>
+									박물관 전시 및 소장품 정보 제공을 중심적으로 이미지를 사용하여 직관적으로 보여줄수 있게 표현하였습니다.
+								</p>
+								<strong>기여도</strong>
+								<p>디자인 80% / HTML&CSS 80%</p>
+								<strong>사용프로그램</strong>
+								<p>Photoshop, Illustrator</p>
+								
+								<button onclick="location.href='#'">BEHANCE ↗</button>
+							</a>
+							<a href="#" target="_blank" cursor-class="arrow" class="works work_3">
+								<img src="./assets/images/work_6.png" alt="work">
+								<p>토닥토닥 어플<br>
+									인트로와 일반 페이지로 통해 서소문이 가지고 있는 분위기를 보여줄 수 있게 디자인을 하였고,<br>
+									박물관 전시 및 소장품 정보 제공을 중심적으로 이미지를 사용하여 직관적으로 보여줄수 있게 표현하였습니다.
+								</p>
+								<strong>기여도</strong>
+								<p>디자인 100% / HTML&CSS 70%</p>
+								<strong>사용프로그램</strong>
+								<p>Photoshop, Illustrator, XD</p>
+								<strong>프로젝트 소개</strong>
+								
+								<button onclick="location.href='https://www.behance.net/gallery/163765225/-app'">BEHANCE ↗</button>
+							</a>
+							<a href="#" target="_blank" cursor-class="arrow" class="works work_4">
+								<img src="./assets/images/work_8.png" alt="work">
+								<strong>프로젝트 소개</strong>
+								<p>히든스카우트 홈페이지<br>
+									최신 트렌트에 맞춰 개인, 기업, 헤드헌터 전체적인 디자인 리뉴얼을 하였고, 헤드헌터의 UI/UX를 고려하여 PC 중심적인 디자인을 하였습니다.  <br>
+									
+								</p>
+								<strong>기여도</strong>
+								<p>디자인 100% / HTML&CSS 100%</p>
+								<strong>사용프로그램</strong>
+								<p>Photoshop, Illustrator</p>
+								
+								<button onclick="location.href='#'">BEHANCE ↗</button>
+							</a>
+						</div>
+
+					</div>
+
+					<!-- <div class="sec07 section">
+						<div class="cont_wrap">
+							<div class="title">
+								<h1 class="fm_NeueHaas55">
+									
+								</h1>
+								<p>.</p>
+							</div>
+							<div class="ClientLine fm_NeueHaas55"><span></span></div>
+						</div>
+					</div> -->
+					
+					<!-- <div id="contact"></div> -->
+					<div class="sec07 section">
+						<div class="cont_wrap cont_1">
+							<div class="title">
+								<!-- <h1 class="fm_NeueHaas55">
+									
+								</h1> -->
+								<p>진행했던 프로젝트를 더 소개해드리겠습니다.<div class=""></div></p>
+							</div>
+							<div class="clientList">
+								<div class="marquee">
+									<ul class="marquee__inner" aria-hidden="true" ref="inner">
+										<li class="marquee__part"><a href="https://www.behance.net/gallery/162166391/_"><img src="./assets/images/bnr01.png" alt="서소문성지역사박물관"></a></li>
+										<li class="marquee__part"><a href="https://martyrs.or.kr/_web/main/main.html"><img src="./assets/images/bnr02.png" alt="성지순교자현양위원회"></a></li>
+										<li class="marquee__part"><a href="http://kccaa.kr/home/"><img src="./assets/images/bnr03.png" alt="도예가회"></a></li>
+										<li class="marquee__part"><a href="https://biocycle.org/main/"><img src="./assets/images/bnr04.png" alt="포스트플라스틱"></a></li>
+										<li class="marquee__part"><a href="https://www.chmhc.org/main/#"><img src="./assets/images/bnr05.png" alt="춘천시정신건강복지센터"></a></li>
+										<li class="marquee__part"><a href="https://www.iecs.go.kr/index.do"><img src="./assets/images/bnr06.png" alt="인천광역시교육청학생문화회관"></a></li>
+										<li class="marquee__part"><a href="https://www.ipac.kr/main/"><img src="./assets/images/bnr07.png" alt="IPAC"></a></li>
+										<li class="marquee__part"><a href="https://card.knta.or.kr/web/main/main.html"><img src="./assets/images/bnr08.png" alt="대한결핵협회"></a></li>
+										<li class="marquee__part"><a href="http://lflogis.com/main/main_fullpage.html"><img src="./assets/images/bnr09.png" alt="LF"></a></li>
+										<li class="marquee__part"><a href="http://www.happistory.com/web/main/main.html"><img src="./assets/images/bnr10.png" alt="해피스토리"></a></li>
+										<li class="marquee__part"><a href="https://www.behance.net/gallery/163765225/-app"><img src="./assets/images/bnr11.png" alt="토닥토닥"></a></li>
+										<li class="marquee__part"><a href="http://core07.cafe24.com/kea_ny/main/main.html#visual"><img src="./assets/images/bnr12.png" alt="KEA"></a></li>
+										<li class="marquee__part"><a href="https://www.hiddenscout.co.kr/index.html"><img src="./assets/images/bnr13.png" alt="히든스카우트"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="cont_wrap cont_2 target_cont">
+							<div class="port">
+								<strong>Hyein Tour (이전 작업)</strong>
+								<ul>
+									<li><a href="./port/port.html"><img src="./assets/images/porttour.jpg" alt="팝업 전"><p>투어 전</p></a></li>
+									<li><a href="./port/port_popup.html"><img src="./assets/images/porttour2.jpg" alt="팝업 후"><p>투어 후</p></a></li>
+								</ul>
+								
+								
+							</div>
+							<div class="title">
+								<div class="fm_NeueHaas55">
+									<h1>끝까지 봐주셔서 감사합니다 :)</h1>
+								</div>
+							</div>
+							<div class="infoBox">
+								<div class="add">
+									<p class="fm_NeueHaas55">
+										아무리 좋은 것이라도 쓸모 있게 만들어야 값진 보배가 될 수 있는 것처럼, 
+										모든 디자인 또한 사용자에게 브랜드의 가치를 전달하여 사용자가 공감할 수 있고 편리하게 이용할 수 있도록 만드는 것이 가장 중요하다고 생각합니다. 
+										항상 사용자와 브랜드의 관점을 최우선으로 고려하여 디자인하겠습니다. 
+										여러 사람과 함께 더 나은 방향을 찾아 고민하며 꾸준한 자기 계발로 현재에 안주하지 않고 끝없이 성장해나가겠습니다.
+									</p>
+								</div>
+
+								<div class="email">
+									<a class="xi-mail-read-o" href="mailto:leehye1204@naver.com" target="_blank"><span>leehye1204@naver.com</span></a>
+								</div>
+								<div class="link">
+									<a href="http://leehye1204.dothome.co.kr/" target="_blank" cursor-class="arrow" class="linkedin fm_NeueHaas55">그외 작업 게시물</a>
+								</div>
+							</div>
+						</div>
+						<div class="cont_wrap cont_3 target_cont"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
